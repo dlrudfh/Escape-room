@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Documents.loader.js";
+      var loaderUrl = buildUrl + "/room.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Documents.data.br",
-        frameworkUrl: buildUrl + "/Documents.framework.js.br",
-        codeUrl: buildUrl + "/Documents.wasm.br",
+        dataUrl: buildUrl + "/room.data.br",
+        frameworkUrl: buildUrl + "/room.framework.js.br",
+        codeUrl: buildUrl + "/room.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "방탈출",
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
